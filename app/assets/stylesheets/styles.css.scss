@@ -1,0 +1,29 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.innerBox {
+  padding: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+#itunesView {
+  .albumContainer {
+    margin-bottom: 10px;
+  }
+  &:last-child {
+    margin-bottom:0px;
+  }
+}

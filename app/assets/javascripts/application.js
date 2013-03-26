@@ -18,4 +18,5 @@
 //= require backbone_rails_sync
 //= require backbone_datalink
 //= require backbone/rachel_and_the_kings
+//= require hamlcoffee
 //= require_tree .

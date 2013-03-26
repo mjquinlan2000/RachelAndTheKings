@@ -1,0 +1,8 @@
+%td.trackNumber= @trackNumber
+%td.trackName
+  %a.btn-link{href: @trackViewUrl}= @trackName
+%td
+  .controlsContainer.pull-right
+    .btn.btn-small.previewBtn Preview
+    %a.btn.btn-small.buyBtn{href: @trackViewUrl}= "Buy $#{@trackPrice}"
+  %audio{src: @previewUrl, preload: 'metadata'}
