@@ -19,4 +19,5 @@
 //= require backbone_datalink
 //= require backbone/rachel_and_the_kings
 //= require hamlcoffee
+//= require jso/jso
 //= require_tree .
