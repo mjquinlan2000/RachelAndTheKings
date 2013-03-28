@@ -6,8 +6,12 @@ class RachelAndTheKings.Views.AlbumView extends Backbone.View
 
   render: =>
     @$el.html @template(@options)
-    @collection.each (model) =>
+    @collection.each (model, index) =>
       view = new RachelAndTheKings.Views.TrackView
         model: model
-      @$('.tracksContainer').append view.render().el
+
+      if index == 0
+        view.setElement(@$('.firstRow')).render()
+      else
+        @$('.tracksContainer').append view.render().el
     @

@@ -1,8 +1,7 @@
-.row.albumContainer
-  .albumInfo.span2
-    %a.btn-link{href: @collectionUrl}= @albumName
-    .artworkContainer
-      %img{src: @artworkUrl, height: '100', width: '100'}
-  .trackInfo.span10{style: 'display:inline-block'}
-    %table.table.table-hover.table-condensed{style: 'width:100%'}
-      %tbody.tracksContainer
+%table.table.table-hover.table-condensed.albumTable{style: 'width:100%'}
+  %tbody.tracksContainer
+    %tr.firstRow
+      %td{rowspan: @collectionLength}
+        %a.btn-link{href: @collectionUrl}= @albumName
+        .artworkContainer
+          %img{src: @artworkUrl, height: '100', width: '100'}

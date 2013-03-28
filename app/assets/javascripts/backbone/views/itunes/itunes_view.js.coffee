@@ -2,6 +2,7 @@ class RachelAndTheKings.Views.ItunesView extends Backbone.View
   template: JST['backbone/templates/itunes/itunes_template']
 
   render: =>
+    @$el.html @template()
     @_getTrackData()
 
   _getTrackData: =>
@@ -18,7 +19,7 @@ class RachelAndTheKings.Views.ItunesView extends Backbone.View
         console.log e
 
   _displayResults: =>
-    @$el.empty()
+    @$('.componentContent').empty()
     tracks_by_album = _.groupBy @trackData, 'collectionName'
     _.each tracks_by_album, (album, title) =>
       trackCollection = new RachelAndTheKings.Collections.TracksCollection album
@@ -28,4 +29,5 @@ class RachelAndTheKings.Views.ItunesView extends Backbone.View
         artworkUrl: trackCollection.at(0).get('artworkUrl100')
         collectionUrl: trackCollection.at(0).get('collectionViewUrl')
         collectionPrice: "$#{trackCollection.at(0).get('collectionPrice')}"
-      @$el.append albumView.render().el
+        collectionLength: trackCollection.length
+      @$('.componentContent').append albumView.render().el

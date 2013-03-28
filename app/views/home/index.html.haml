@@ -1,5 +1,18 @@
-#itunesView
+.row
+  .span12
+    #topspinView
+.row
+  .span8
+    #itunesView
+  .span4
+    #twitterView
 
 :javascript
-  itunesView = new RachelAndTheKings.Views.ItunesView({el: '#itunesView'});
+  var topspinView = new RachelAndTheKings.Views.TopspinView({el: '#topspinView'});
+  topspinView.render()
+
+  var twitterView = new RachelAndTheKings.Views.TwitterView({el: '#twitterView'});
+  twitterView.render();
+
+  var itunesView = new RachelAndTheKings.Views.ItunesView({el: '#itunesView'});
   itunesView.render();

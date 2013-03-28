@@ -1,1 +1,4 @@
-.someContainer This is a container
+.componentWrapper
+  .componentHeader
+    %h4 iTunes Music
+  .componentContent

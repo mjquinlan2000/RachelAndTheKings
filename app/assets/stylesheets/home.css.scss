@@ -1,3 +1,38 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$thinGreyBorder: 1px solid #ddd;
+
+.componentWrapper {
+  border-radius: 4px;
+  border: $thinGreyBorder;
+
+  .componentHeader {
+    border-bottom: $thinGreyBorder;
+    h4 {
+      margin-bottom: 12px;
+      margin-left: 12px;
+    }
+  }
+}
+
+table.albumTable {
+  tbody {
+    tr:first-child {
+      td:first-child {
+        width: 150px;
+      }
+    }
+  }
+}
+
+.componentContent {
+  table:first-child {
+    tr:first-child {
+      td {
+        border-top: none;
+      }
+    }
+  }
+}

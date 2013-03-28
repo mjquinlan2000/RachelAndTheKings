@@ -7,7 +7,7 @@ class RachelAndTheKings.Views.TrackView extends Backbone.View
     'click .previewBtn' : 'handlePreview'
 
   render: =>
-    @$el.html @template(@model.toJSON())
+    @$el.append @template(@model.toJSON())
     @
 
   handlePreview: =>
