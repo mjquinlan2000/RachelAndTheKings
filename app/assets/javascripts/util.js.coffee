@@ -9,11 +9,12 @@ window.Util =
     year = date.getFullYear()
     dayOfMonth = date.getDate()
 
-    switch dayOfMonth % 10
-      when 1 then dateEnding = 'st'
-      when 2 then dateEnding = 'nd'
-      when 3 then dateEnding = 'rd'
-      else dateEnding = 'th'
+    dateEnding = 'th'
+    if dayOfMonth < 10 and dayOfMonth > 20
+      switch dayOfMonth % 10
+        when 1 then dateEnding = 'st'
+        when 2 then dateEnding = 'nd'
+        when 3 then dateEnding = 'rd'
 
     hours = date.getHours()
 
