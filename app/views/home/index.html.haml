@@ -1,5 +1,8 @@
 .row
   .span12
+    #showsView
+.row
+  .span12
     #topspinView
 .row
   .span8
@@ -8,11 +11,14 @@
     #twitterView
 
 :javascript
-  var topspinView = new RachelAndTheKings.Views.TopspinView({el: '#topspinView'});
-  topspinView.render()
-
   var twitterView = new RachelAndTheKings.Views.TwitterView({el: '#twitterView'});
   twitterView.render();
 
   var itunesView = new RachelAndTheKings.Views.ItunesView({el: '#itunesView'});
   itunesView.render();
+
+  var showsCollection = new RachelAndTheKings.Collections.ShowsCollection();
+  showsCollection.fetch()
+
+  var showsView = new RachelAndTheKings.Views.ShowsView({el: '#showsView', collection: showsCollection})
+  showsView.render()

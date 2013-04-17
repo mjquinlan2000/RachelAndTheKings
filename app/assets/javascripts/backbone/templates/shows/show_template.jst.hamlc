@@ -1,0 +1,7 @@
+%dl
+  %dt.clearfix
+    .left= @name
+    .right= @city
+  %dd.clearfix
+    .left= "#{Util.getDateString(new Date(@date))} at #{@venue}"
+    %a.right{href: @tickets_url} Buy Tickets

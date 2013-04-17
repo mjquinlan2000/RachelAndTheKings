@@ -1,0 +1,4 @@
+.componentWrapper
+  .componentHeader
+    %h4 Shows
+  .componentContent{style: 'padding:10px'}

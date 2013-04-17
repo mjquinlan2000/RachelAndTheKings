@@ -8,6 +8,7 @@ group :assets do
   gem 'rails-backbone'
   gem 'haml_coffee_assets'
   gem 'execjs'
+  gem 'jbuilder'
 end
 gem 'jquery-rails'
 gem "thin", ">= 1.5.0"

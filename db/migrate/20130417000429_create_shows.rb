@@ -6,7 +6,7 @@ class CreateShows < ActiveRecord::Migration
       t.string :venue_url
       t.string :tickets_url
       t.string :city
-      t.date :date
+      t.timestamp :date
 
       t.timestamps
     end
