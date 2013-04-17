@@ -1,5 +1,8 @@
 .row
   .span12
+    #bloggerView
+.row
+  .span12
     #showsView
 .row
   .span12
@@ -18,7 +21,10 @@
   itunesView.render();
 
   var showsCollection = new RachelAndTheKings.Collections.ShowsCollection();
-  showsCollection.fetch()
+  showsCollection.fetch();
 
   var showsView = new RachelAndTheKings.Views.ShowsView({el: '#showsView', collection: showsCollection})
-  showsView.render()
+  showsView.render();
+
+  var postsView = new RachelAndTheKings.Views.PostsView({el: '#bloggerView', collection: new Backbone.Collection()});
+  postsView.render();

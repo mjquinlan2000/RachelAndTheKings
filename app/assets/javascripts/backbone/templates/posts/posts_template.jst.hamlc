@@ -1,0 +1,4 @@
+.componentWrapper
+  .componentHeader
+    %h4 Blog
+  .componentContent

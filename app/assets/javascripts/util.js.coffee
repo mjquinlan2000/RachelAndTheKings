@@ -1,6 +1,8 @@
 window.Util =
   months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
+  bloggerApiKey: 'AIzaSyC0Dnlm3Ghexg8u4sWsxv14cy_S-izE-Uc'
+
   daysOfWeek: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
   getDateString: (date) =>
