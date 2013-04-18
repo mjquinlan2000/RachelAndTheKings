@@ -12,6 +12,7 @@
 //
 //= require util
 //= require jquery
+//= require headers
 //= require jquery_ujs
 //= require bootstrap
 //= require underscore

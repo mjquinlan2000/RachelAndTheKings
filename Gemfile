@@ -10,6 +10,7 @@ group :assets do
   gem 'execjs'
   gem 'jbuilder'
 end
+gem 'pry-rails'
 gem 'jquery-rails'
 gem "thin", ">= 1.5.0"
 gem "haml-rails", ">= 0.4"
